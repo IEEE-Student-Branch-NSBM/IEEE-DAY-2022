@@ -1,3 +1,8 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  text-decoration: none !important;
   font-family: "Poppins" !important;
 }
