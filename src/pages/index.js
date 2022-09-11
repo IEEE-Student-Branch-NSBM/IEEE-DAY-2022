@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="relative">
+      <section className="relative justify-center mx-auto my-auto">
         <TrackSession />
       </section>
     </div>

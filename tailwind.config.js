@@ -10,6 +10,7 @@ module.exports = {
   ],
   theme: {
     screens: {
+      xxs: "320px",
       xs: "340px",
       sm: "640px",
       md: "768px",
@@ -192,6 +193,10 @@ module.exports = {
       colors: {
         brown: {
           10: "#783903",
+          20: "#805938",
+        },
+        gray: {
+          10: "#D3D3D3",
         },
       },
     },
