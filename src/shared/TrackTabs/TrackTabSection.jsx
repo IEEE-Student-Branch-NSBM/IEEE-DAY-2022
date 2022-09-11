@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { TrackDetailsData } from "../../data/TrackDetailsData";
 import TrackDetails from "./TrackDetails";
 
-const TrackTabSection = () => {
+const TrackTabSection = ({ trackDataDetails }) => {
   const [currIndex, setCurrIndex] = useState(0);
   const [trackDetailsData, setTrackDetailsData] = useState();
   useEffect(() => {
@@ -19,11 +18,11 @@ const TrackTabSection = () => {
       category = "Track 05";
     }
     setTrackDetailsData(
-      TrackDetailsData.filter((item) => {
+      trackDataDetails.filter((item) => {
         return item.trackCategory === category;
       })
     );
-  }, [currIndex]);
+  }, [currIndex, trackDataDetails]);
 
   return (
     <div className="container flex flex-col items-center my-8">
