@@ -41,6 +41,7 @@ const TrackDetails = ({ name, description, imageUrl }) => {
             width={300}
             height={450}
             alt="character image"
+            loading="lazy"
           />
         </div>
       </div>
