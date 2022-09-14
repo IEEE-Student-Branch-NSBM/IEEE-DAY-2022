@@ -1,9 +1,6 @@
 import { data } from "autoprefixer";
 import React from "react";
-import useSWR from "swr";
-import { HeaderTitle } from "../../shared/Titles/HeaderTitle";
-import PreLoader from "../Loader/PreLoader";
-import { useCountdown } from "./countdownHooks/useCountdown";
+import { useCountdown } from "../../utils/useCountdown";
 import DateTimeDisplay from "./DateTimeDisplay";
 
 const ExpiredNotice = () => {
@@ -19,11 +16,17 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
   return (
     <div className="flex flex-row show-counter w-max m-auto">
       <DateTimeDisplay value={days} type={"Days"} isDanger={days <= 3} />
-      <p className="text-15xl text-brown-10 font-semibold">:</p>
+      <p className="text-10xl sm:text-15xl leading-0 sm:leading-20 text-brown-10 font-semibold">
+        :
+      </p>
       <DateTimeDisplay value={hours} type={"Hours"} isDanger={false} />
-      <p className="text-15xl text-brown-10 font-semibold">:</p>
+      <p className="text-10xl sm:text-15xl leading-0 sm:leading-20 text-brown-10 font-semibold">
+        :
+      </p>
       <DateTimeDisplay value={minutes} type={"Mins"} isDanger={false} />
-      <p className="text-15xl text-brown-10 font-semibold">:</p>
+      <p className="text-10xl sm:text-15xl leading-0 sm:leading-20 text-brown-10 font-semibold">
+        :
+      </p>
       <DateTimeDisplay value={seconds} type={"Seconds"} isDanger={false} />
     </div>
   );
@@ -34,7 +37,7 @@ const CountdownTimer = ({ targetDate }) => {
 
   return (
     <>
-      <div className="bg-hero-pattern grid grid-cols-1 grid-rows-6 h-85 place-items-center">
+      <div className="bg-hero-pattern grid grid-cols-1 grid-rows-5 sm:grid-rows-6 h-85 place-items-center">
         <p className="font-bold text-12xl text-brown-10 leading-15 mt-11">
           Lorem Ipsum
         </p>

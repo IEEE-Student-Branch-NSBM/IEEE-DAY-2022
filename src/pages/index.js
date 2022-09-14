@@ -2,12 +2,13 @@ import Head from "next/head";
 import CountdownTimer from "../components/Countdown/CountdownTimer";
 import { SpeakerSection } from "../components/Speakers/SpeakerSection";
 import { TrackSession } from "../components/Tracks/TrackSession";
+import { countdownMath } from "../utils/mathutils";
 
 export default function Home() {
-  const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
-  const NOW_IN_MS = new Date().getTime();
+  // const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
+  // const NOW_IN_MS = new Date().getTime();
 
-  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+  // const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
 
   return (
     <div>
@@ -20,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="relative justify-center mx-auto my-auto">
-        <CountdownTimer targetDate={dateTimeAfterThreeDays} />
+        <CountdownTimer targetDate={countdownMath()} />
       </section>
 
       <section className="relative justify-center mx-auto my-auto">
