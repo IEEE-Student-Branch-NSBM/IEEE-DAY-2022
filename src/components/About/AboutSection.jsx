@@ -31,7 +31,7 @@ export const AboutSection = () => {
           </div>
           <div className="w-[483px] inline-flex flex-col lg:block">
             <HeaderTitle title={data?.title} key={data?.id} />
-            <p className=" text-lg font-normal mx-20 xs:mx-12 sm:mx-0 mt-4 text-center lg:text-left 3xl:px-32">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bookLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p className=" text-lg font-normal mx-20 xs:mx-12 sm:mx-0 mt-4 text-center lg:text-left 3xl:px-32">{data?.description}</p>
             <div className="inline-flex m-auto font-lg text-white bg-brown-10 mt-7">
               <HyperlinkButton key={data?.id} text="MORE DETAILS" link={data?.buttonLink} />
             </div>
