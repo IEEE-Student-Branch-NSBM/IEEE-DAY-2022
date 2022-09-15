@@ -21,6 +21,10 @@ module.exports = {
       "3xl": "1920px",
     },
     extend: {
+      backgroundImage: {
+        "hero-pattern": "url('/images/countdownbg.png')",
+        "footer-texture": "url('/img/footer-texture.png')",
+      },
       container: {
         padding: {
           DEFAULT: "1.5rem",
@@ -49,6 +53,7 @@ module.exports = {
         55.5: "13.875rem", // 222px
         74.5: "18.625rem", //298px
         84.832: "21.208rem", //339.33px
+
         88: "22rem", //352px
         88.25: "22.063rem", //353px
         104.832: "26.208rem", // 419.33px
@@ -58,6 +63,7 @@ module.exports = {
         15.5: "3.875rem", // 62px
         37.5: "9.375rem", //150px
         55.25: "13.813rem", //221px
+        85: "20.5rem", //328px
         92.75: "23.188rem", //371px
         99: "22rem", //396px
         115.75: "28.938rem", // 463px
@@ -144,6 +150,7 @@ module.exports = {
         "16xl": "52px",
         "17xl": "54px",
         "18xl": "56px",
+        "18.8xl": "70px",
         "19xl": "80px",
         "20xl": "84px",
         "21xl": "92px",
@@ -163,6 +170,7 @@ module.exports = {
         extrabold: 800,
         black: 900,
       },
+
       lineHeight: {
         5.25: "1.3125rem", //21px
         5.5: "1.375rem", //22px
@@ -186,7 +194,8 @@ module.exports = {
         18: "4.5rem",
         18.75: "4.688rem", //75px
         20: "5rem", //80px
-        22: "5.5rem",
+        21: "5.25rem", //84px
+        22: "5.5rem", //88px
         26: "6.5rem", //104px
         26.25: "6.563rem", //105px
       },
