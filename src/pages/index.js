@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { AboutSection } from "../components/About/AboutSection";
 import { SpeakerSection } from "../components/Speakers/SpeakerSection";
 import { TrackSession } from "../components/Tracks/TrackSession";
 
@@ -13,6 +14,10 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+    
+      <section className="relative justify-center mx-auto my-auto">
+        <AboutSection />
+      </section>
 
       <section className="relative justify-center mx-auto my-auto">
         <SpeakerSection />
