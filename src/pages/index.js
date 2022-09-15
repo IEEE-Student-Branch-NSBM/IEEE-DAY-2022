@@ -21,8 +21,11 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+    
       <section className="relative justify-center mx-auto my-auto">
         <AboutSection />
+      </section>
+    
       <section className="relative justify-center mx-auto my-auto">
         <CountdownTimer targetDate={countdownMath()} />
       </section>
