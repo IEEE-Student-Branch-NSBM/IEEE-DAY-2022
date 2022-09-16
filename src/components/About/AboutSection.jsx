@@ -30,7 +30,7 @@ export const AboutSection = () => {
               loading = "lazy" />
           </div>
           <div className="w-[483px] inline-flex flex-col lg:block">
-            <HeaderTitle title={data?.title} key={data?.id} />
+            <HeaderTitle style="lg:!text-left" title={data?.title} key={data?.id} />
             <p className=" text-lg font-normal mx-20 xs:mx-12 sm:mx-0 mt-4 text-center lg:text-left 3xl:px-32">{data?.description}</p>
             <div className="inline-flex m-auto font-lg text-white bg-brown-10 mt-7">
               <HyperlinkButton key={data?.id} text="MORE DETAILS" link={data?.buttonLink} />
