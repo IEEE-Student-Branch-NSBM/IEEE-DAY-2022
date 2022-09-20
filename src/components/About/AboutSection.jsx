@@ -31,7 +31,7 @@ export const AboutSection = () => {
           </div>
           <div className="w-full lg:w-[483px] inline-flex flex-col lg:block">
             <HeaderTitle style="lg:!text-left" title={data?.title} key={data?.id} />
-            <p className=" text-lg font-normal mx-20 xs:mx-12 lg:mx-0 mt-4 text-center lg:text-left 3xl:px-32">{data?.description}</p>
+            <p className=" text-lg font-normal mx-20 xs:mx-12 lg:mx-0 mt-4 text-center lg:text-left">{data?.description}</p>
             <div className="inline-flex m-auto font-lg text-white bg-brown-10 mt-7">
               <HyperlinkButton key={data?.id} text="MORE DETAILS" link={data?.buttonLink} />
             </div>
