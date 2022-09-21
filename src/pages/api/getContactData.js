@@ -8,6 +8,7 @@ export default function handler(req, res) {
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     details: [
       {
+        id: 1,
         item: "Phone",
         list: [
           {
@@ -25,6 +26,7 @@ export default function handler(req, res) {
         ],
       },
       {
+        id: 2,
         item: "Email",
         list: [
           {
@@ -42,6 +44,7 @@ export default function handler(req, res) {
         ],
       },
       {
+        id: 3,
         item: "Location",
         list: [
           {
