@@ -20,7 +20,7 @@ export const ContactSection = () => {
 
   return (
     <>
-      <div className="mt-24 lg:mx-[245px]">
+      <div className="mt-24 2xl:mx-[245px]">
         <HeaderTitle title={data?.title} key={data?.id} />
         <p className=" text-lg font-light leading-6.5 mx-20 xs:mx-12 lg:mx-[114px] mt-4 text-center">
           {data?.description}
