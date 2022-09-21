@@ -22,7 +22,7 @@ export const ContactSection = () => {
     <>
       <div className="mt-24 2xl:mx-[245px]">
         <HeaderTitle title={data?.title} key={data?.id} />
-        <p className=" text-lg font-light leading-6.5 mx-20 xs:mx-12 lg:mx-[114px] mt-4 text-center">
+        <p className=" text-lg font-light leading-6.5 mx-10 lg:mx-32 xl:mx-50 xxl:mx-72 2xl:mx-[114px] mt-4 text-center">
           {data?.description}
         </p>
         <ContactCard contacts={data?.details} />
