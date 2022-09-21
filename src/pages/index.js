@@ -3,6 +3,7 @@ import { AboutSection } from "../components/About/AboutSection";
 import CountdownTimer from "../components/Countdown/CountdownTimer";
 import { SpeakerSection } from "../components/Speakers/SpeakerSection";
 import { TrackSession } from "../components/Tracks/TrackSession";
+import { Faq } from "../components/FAQ/Faq";
 import { countdownMath } from "../utils/mathutils";
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    
+
       <section className="relative justify-center mx-auto my-auto">
         <CountdownTimer targetDate={countdownMath()} />
       </section>
@@ -36,6 +37,10 @@ export default function Home() {
 
       <section className="relative justify-center mx-auto my-auto">
         <TrackSession />
+      </section>
+
+      <section className="relative justify-center mx-auto my-auto">
+        <Faq />
       </section>
     </div>
   );
