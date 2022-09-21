@@ -8,12 +8,12 @@ export const ContactCard = ({ contacts }) => {
     <div className="flex flex-col sm:flex-row flex-wrap justify-evenly mx-20 lg:mx-0 mt-[70px]">
       {contacts &&
         contacts.map((details) => (
-          <div className="flex flex-col sm:flex-row items-center sm:items-start sm:w-full md:w-auto px-0 py-10 md:px-5 md:py-5 lg:p-0">
+          <div
+            key={details.id}
+            className="flex flex-col sm:flex-row items-center sm:items-start sm:w-full md:w-auto px-0 py-10 md:px-5 md:py-5 lg:p-0"
+          >
             {/* Icon */}
-            <div
-              className="sm:w-1/2 md:w-auto pb-5 sm:pb-0 pr-0 sm:pr-5"
-              key={details.id}
-            >
+            <div className="sm:w-1/2 md:w-auto pb-5 sm:pb-0 pr-0 sm:pr-5">
               <div className="bg-brown-10 sm:ml-[calc(100%-68px)] md:ml-0 p-4 rounded-full">
                 {details.item === "Phone" && (
                   <FaPhoneAlt fill="#ffffff" size="36" />
