@@ -61,7 +61,7 @@ const Balls = styled.div`
   }
 `;
 
-const PreLoader = () => {
+const BubbledotLoader = () => {
   return (
     <Screen>
       <Balls>
