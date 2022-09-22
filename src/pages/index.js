@@ -4,6 +4,7 @@ import CountdownTimer from "../components/Countdown/CountdownTimer";
 import { SpeakerSection } from "../components/Speakers/SpeakerSection";
 import { TrackSession } from "../components/Tracks/TrackSession";
 import { countdownMath } from "../utils/mathutils";
+import { ContactSection } from "../components/Contact/ContactSection";
 
 export default function Home() {
   // const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
@@ -37,6 +38,12 @@ export default function Home() {
       <section className="relative justify-center mx-auto my-auto">
         <TrackSession />
       </section>
+
+      <section className="relative justify-center mx-auto my-auto">
+        <ContactSection />
+      </section>
+
+
     </div>
   );
 }
