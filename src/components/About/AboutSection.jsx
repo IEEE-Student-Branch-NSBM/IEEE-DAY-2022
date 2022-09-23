@@ -3,7 +3,8 @@ import useSWR from "swr";
 import Image from "next/image";
 import { HeaderTitle } from "../../shared/Titles/HeaderTitle";
 import { HyperlinkButton } from "../../shared/Buttons/HyperlinkButton";
-import BubbledotLoader from "../Loader/BubbledotLoader";
+// import BubbledotLoader from "../Loader/BubbledotLoader";
+import LogoLoader from "../Loader/LogoLoader";
 
 export const AboutSection = () => {
   const fetcher = (url) => fetch(url).then((res) => res.json());
@@ -14,7 +15,7 @@ export const AboutSection = () => {
   if (!data)
     return (
       <div>
-        <BubbledotLoader />
+        <LogoLoader />
       </div>
     );
 
