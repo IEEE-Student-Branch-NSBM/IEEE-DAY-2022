@@ -73,4 +73,4 @@ const BubbledotLoader = () => {
   );
 };
 
-export default PreLoader;
+export default BubbledotLoader;
