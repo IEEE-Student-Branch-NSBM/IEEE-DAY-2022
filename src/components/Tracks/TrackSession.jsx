@@ -3,7 +3,8 @@ import useSWR from "swr";
 import { HeaderSubTitle } from "../../shared/SubTitle/HeaderSubTitle";
 import { HeaderTitle } from "../../shared/Titles/HeaderTitle";
 import TrackTabSection from "../../shared/TrackTabs/TrackTabSection";
-import PreLoader from "../Loader/PreLoader";
+// import PreLoader from "../Loader/PreLoader";
+import BubbledotLoader from "../Loader/BubbledotLoader";
 
 export const TrackSession = () => {
   const fetcher = (url) => fetch(url).then((res) => res.json());
@@ -15,7 +16,7 @@ export const TrackSession = () => {
   if (!data)
     return (
       <div>
-        <PreLoader />
+        <BubbledotLoader />
       </div>
     );
 

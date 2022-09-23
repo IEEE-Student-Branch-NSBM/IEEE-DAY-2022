@@ -2,7 +2,7 @@ import React from "react";
 import useSWR from "swr";
 import Image from "next/image";
 import { HeaderTitle } from "../../shared/Titles/HeaderTitle";
-import PreLoader from "../Loader/PreLoader";
+import BubbledotLoader from "../Loader/BubbledotLoader";
 import { ContactCard } from "../../shared/Cards/ContactCard";
 
 export const ContactSection = () => {
@@ -14,7 +14,7 @@ export const ContactSection = () => {
   if (!data)
     return (
       <div>
-        <PreLoader />
+        <BubbledotLoader />
       </div>
     );
 

@@ -3,7 +3,8 @@ import useSWR from "swr";
 import SpeakerCard from "../../shared/Cards/SpeakerCard";
 import { HeaderSubTitle } from "../../shared/SubTitle/HeaderSubTitle";
 import { HeaderTitle } from "../../shared/Titles/HeaderTitle";
-import PreLoader from "../Loader/PreLoader";
+// import PreLoader from "../Loader/PreLoader";
+import BubbledotLoader from "../Loader/BubbledotLoader";
 
 export const SpeakerSection = () => {
   const fetcher = (url) => fetch(url).then((res) => res.json());
@@ -15,7 +16,7 @@ export const SpeakerSection = () => {
   if (!data)
     return (
       <div>
-        <PreLoader />
+        <BubbledotLoader />
       </div>
     );
 
