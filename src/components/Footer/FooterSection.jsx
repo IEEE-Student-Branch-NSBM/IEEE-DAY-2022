@@ -4,10 +4,8 @@ import Image from "next/image";
 import { HeaderTitle } from "../../shared/Titles/HeaderTitle";
 import PreLoader from "../Loader/PreLoader";
 import { FaFacebook } from "@react-icons/all-files/fa/FaFacebook";
-import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
-import { FaInstagramSquare } from "@react-icons/all-files/fa/FaInstagramSquare";
 import { FaYoutube } from "@react-icons/all-files/fa/FaYoutube";
 
 export const FooterSection = () => {
@@ -39,8 +37,8 @@ export const FooterSection = () => {
           </div>
           <div className="w-[160px] h-fit flex flex-row justify-between">
             <a href={data?.facebookUrl} target="_"><FaFacebook className=" fill-brown-10" size={30}/></a>
-            <a href={data?.linkedinUrl} target="_"><FaLinkedin className="fill-brown-10" size={30} /></a>
-            <a href={data?.instagramUrl} target="_"><FaInstagramSquare className="fill-brown-10" size={30}/></a>
+            <a href={data?.linkedinUrl} target="_"><div className="w-[30px] h-[30px] flex items-center justify-center bg-brown-10 rounded-full"><FaLinkedinIn className="fill-white" size={18} /></div></a>
+            <a href={data?.instagramUrl} target="_"><div className="w-[30px] h-[30px] flex items-center justify-center bg-brown-10 rounded-full"><FaInstagram className="fill-white" size={21}/></div></a>
             <a href={data?.youtubeUrl} target="_"><FaYoutube className=" fill-brown-10" size={30} /></a>
           </div>
         </div>
