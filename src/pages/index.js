@@ -7,11 +7,6 @@ import { countdownMath } from "../utils/mathutils";
 import { ContactSection } from "../components/Contact/ContactSection";
 
 export default function Home() {
-  // const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
-  // const NOW_IN_MS = new Date().getTime();
-
-  // const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
-
   return (
     <div>
       <Head>
@@ -22,7 +17,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    
+
       <section className="relative justify-center mx-auto my-auto">
         <CountdownTimer targetDate={countdownMath()} />
       </section>
@@ -42,8 +37,6 @@ export default function Home() {
       <section className="relative justify-center mx-auto my-auto">
         <ContactSection />
       </section>
-
-
     </div>
   );
 }

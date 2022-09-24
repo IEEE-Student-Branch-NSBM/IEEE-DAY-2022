@@ -7,7 +7,7 @@ const Screen = styled.div`
   width: 100%;
   opacity: 0;
   animation: fade 0.4s ease-in forwards;
-  background: black;
+  background: white;
 
   @keyframes fade {
     0% {
