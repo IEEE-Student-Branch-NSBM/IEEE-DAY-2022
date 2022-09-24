@@ -25,14 +25,14 @@ export const FooterSection = () => {
 
   return (
     <>
-      <div className="mt-48 mx-[245px] flex flex-col">
-        <div className="flex flex-row items-center justify-between">
-          <div>
+      <div className="mt-48 mx-10 sm:mx-20 lg:mx-32 2xl:mx-[245px] flex flex-col">
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <div className="mb-8 md:mb-0">
             <a href={data?.ieeeNsbmUrl} target="_">
               <Image src="/images/ieee_nsbm.svg" height={85} width={168} loading="lazy" />
             </a>
           </div>
-          <div>
+          <div className="mb-8 md:mb-0">
             <a href={data?.ieeeDayUrl} target="_">
               <Image src="/images/ieee_day.svg" height={140} width={140} loading="lazy" />
             </a>
@@ -45,13 +45,13 @@ export const FooterSection = () => {
           </div>
         </div>
         <hr className="my-8 border-[1px] border-gray-200"/>
-        <div className="my-6 flex flex-row items-center justify-between">
-          <div>
-            <p className="font-normal leading-5 text-sm text-[#0A142F] uppercase">Copyright © 2022 . All Rights Reserved</p>
-          </div>
-          <div className="flex justify-between w-[250px] text-sm font-normal leading-5">
+        <div className="my-6 flex flex-col md:flex-row-reverse items-center justify-between">
+          <div className="flex flex-col sm:flex-row text-center sm:text-left justify-between w-[250px] text-sm font-normal leading-10 sm:leading-5 mb-6 md:mb-0">
             <a href={data?.termsUrl}>Terms of Service</a>
             <a href={data?.privacyPolicyUrl}>Privacy Policy</a>
+          </div>
+          <div>
+            <p className="font-normal leading-5 text-sm text-[#0A142F] uppercase">Copyright © 2022 . All Rights Reserved</p>
           </div>
         </div>
       </div>
