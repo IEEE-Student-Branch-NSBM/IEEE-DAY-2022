@@ -1,6 +1,6 @@
 import React from "react";
 
-export const DayLogo = ({ height, width }) => {
+export const DayLogo = ({ height, width, className }) => {
   return (
     <>
       <div
@@ -9,7 +9,7 @@ export const DayLogo = ({ height, width }) => {
             ? `w-${width ? "[" + width + "px]" : "auto"} h-${
                 height ? "[" + height + "px]" : "auto"
               }`
-            : "w-[200px] h-[200px]"
+            : "w-[200px] h-[200px]" + ` ${className}`
         }
       >
         <svg
