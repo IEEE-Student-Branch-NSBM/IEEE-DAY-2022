@@ -5,6 +5,7 @@ import { SpeakerSection } from "../components/Speakers/SpeakerSection";
 import { TrackSession } from "../components/Tracks/TrackSession";
 import { countdownMath } from "../utils/mathutils";
 import { ContactSection } from "../components/Contact/ContactSection";
+import { FooterSection } from "../components/Footer/FooterSection";
 
 export default function Home() {
   return (
@@ -37,6 +38,11 @@ export default function Home() {
       <section className="relative justify-center mx-auto my-auto">
         <ContactSection />
       </section>
+
+      <section className="relative justify-center mx-auto my-auto">
+        <FooterSection />  
+      </section>
+
     </div>
   );
 }
