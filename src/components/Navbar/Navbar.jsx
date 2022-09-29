@@ -1,8 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import Link from 'next/link'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
+import PreLoader from "../Loader/PreLoader";
+import useSWR from "swr";
+import Image from "next/image";
 
 function Navbar() {
+
+  
   const [nav, setNav] = useState(false)
   const [color, setColor] = useState('transparent')
   const [textColor, setTextColor] = useState('white')
@@ -23,14 +28,30 @@ function Navbar() {
     }
     window.addEventListener('scroll', changeColor);
   }, []);
+
+  const fetcher = (url) => fetch(url).then((res) => res.json());
+    const { data, error } = useSWR("/api/getNavbarData", fetcher);
+
+    if (error) return <div>Failed to load</div>;
+
+    if (!data)
+    return (
+        <div>
+        <PreLoader />
+        </div>
+    );
   
   return (
     <div style={{backgroundColor: `${color}`}} className='fixed left-0 top-0 w-full z-10 ease-in duration-300'>
-      <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
-        <Link href='/'>
-          <h1 style={{color: `${textColor}`}} className='font-bold text-4xl'>Logo</h1>
-        </Link>
-        <ul style={{color: `${textColor}`}} className='hidden sm:flex'>
+      <div style={{color: `${textColor}`}} className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
+        <Image 
+              src={data.image}
+              width= {276}
+              height= {40}
+              alt={data.title}
+              loading = "lazy" />
+        
+        <ul className='hidden sm:flex'>
           <li className='p-4'>
             <Link href='/'>HOME</Link>
           </li>
