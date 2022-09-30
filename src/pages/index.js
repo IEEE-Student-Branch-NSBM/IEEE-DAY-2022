@@ -3,15 +3,11 @@ import { AboutSection } from "../components/About/AboutSection";
 import CountdownTimer from "../components/Countdown/CountdownTimer";
 import { SpeakerSection } from "../components/Speakers/SpeakerSection";
 import { TrackSession } from "../components/Tracks/TrackSession";
-import { Faq } from "../components/FAQ/Faq";
 import { countdownMath } from "../utils/mathutils";
+import { ContactSection } from "../components/Contact/ContactSection";
+import { FooterSection } from "../components/Footer/FooterSection";
 
 export default function Home() {
-  // const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
-  // const NOW_IN_MS = new Date().getTime();
-
-  // const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
-
   return (
     <div>
       <Head>
@@ -40,7 +36,11 @@ export default function Home() {
       </section>
 
       <section className="relative justify-center mx-auto my-auto">
-        <Faq />
+        <ContactSection />
+      </section>
+
+      <section className="relative justify-center mx-auto my-auto">
+        <FooterSection />
       </section>
     </div>
   );
