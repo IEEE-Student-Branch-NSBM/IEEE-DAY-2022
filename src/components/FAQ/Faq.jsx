@@ -38,9 +38,9 @@ export const Faq = () => {
                     selected === i ? "bg-brown-20 shadow-10xl" : "bg-brown-10"
                   } `}
                 >
-                  <div className="flex flex-wrap justify-between -m-2">
+                  <div className="flex flex-wrap justify-between">
                     <div className="flex-1 p-2">
-                      <h3 className="mb-4 text-lg text-white font-semibold leading-normal">
+                      <h3 className=" text-lg align-bottom text-white font-semibold">
                         {item.question}
                       </h3>
                       <p
