@@ -5,4 +5,9 @@
 * {
   text-decoration: none !important;
   font-family: "Poppins" !important;
+  scroll-behavior: smooth;
+}
+
+.custom-img {
+  background-image: url('../../public/images/Header.png');
 }
