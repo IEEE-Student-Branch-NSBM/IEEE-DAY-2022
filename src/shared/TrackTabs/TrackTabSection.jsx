@@ -4,6 +4,7 @@ import TrackDetails from "./TrackDetails";
 const TrackTabSection = ({ trackDataDetails }) => {
   const [currIndex, setCurrIndex] = useState(0);
   const [trackDetailsData, setTrackDetailsData] = useState();
+
   useEffect(() => {
     let category;
     if (currIndex === 0) {

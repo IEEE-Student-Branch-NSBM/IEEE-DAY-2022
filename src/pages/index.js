@@ -45,9 +45,8 @@ export default function Home() {
       </section>
 
       <section className="relative justify-center mx-auto my-auto">
-        <FooterSection />  
+        <FooterSection />
       </section>
-
     </div>
   );
 }
