@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import Link from 'next/link'
+// import Link from 'next/link'
+import { Link } from 'react-scroll';
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import PreLoader from "../Loader/PreLoader";
 import useSWR from "swr";
@@ -19,7 +20,7 @@ function Navbar() {
   useEffect(() => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
-        setColor('#ffffff');
+        setColor('#DFBB9D');
         setTextColor('#000000');
       } else {
         setColor('transparent');
@@ -56,10 +57,10 @@ function Navbar() {
             <Link href='/'>HOME</Link>
           </li>
           <li className='p-4'>
-            <Link href='/'>ABOUT</Link>
+            <Link href='/AboutSection'>ABOUT</Link>
           </li>
           <li className='p-4'>
-            <Link href='/'>SPEAKERS</Link>
+            <Link href='/SpeakerSection'>SPEAKERS</Link>
           </li>
           <li className='p-4'>
             <Link href='/'>TIMELINE</Link>
