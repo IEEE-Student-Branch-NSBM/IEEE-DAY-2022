@@ -20,7 +20,7 @@ export const SpeakerSection = () => {
     );
 
   return (
-    <div className="mt-24">
+    <div id="speaker" className="mt-24">
       <HeaderTitle title={data?.headerTitle} key={data?.id} />
       <div className="lg:px-80 py-4">
         <HeaderSubTitle key={data?.id} description={data?.description} />

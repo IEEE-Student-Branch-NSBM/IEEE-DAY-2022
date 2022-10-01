@@ -4,8 +4,7 @@ export default function handler(req, res) {
   res.status(200).json({
     id: 1,
     headerTitle: "IEEE DAY NSBM 2022 Track Sessions",
-    headerDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+    headerDescription: "",
     trackList: [
       {
         id: 1,
