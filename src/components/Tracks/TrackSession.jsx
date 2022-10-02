@@ -20,7 +20,7 @@ export const TrackSession = () => {
     );
 
   return (
-    <>
+    <div id="track">
       <HeaderTitle title={data?.headerTitle} key={data?.id} />
       <div className="lg:px-80 py-4">
         <HeaderSubTitle key={data?.id} description={data?.headerDescription} />
@@ -28,6 +28,6 @@ export const TrackSession = () => {
       <div className="lg:px-32">
         <TrackTabSection key={data?.id} trackDataDetails={data?.trackList} />
       </div>
-    </>
+    </div>
   );
 };
