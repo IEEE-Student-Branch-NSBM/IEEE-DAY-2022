@@ -81,7 +81,7 @@ const TrackTabSection = ({ trackDataDetails }) => {
           >
             Track 04
           </div>
-          <div
+          {/* <div
             className={`text-lg xl:text-2xl leading-7 xl:leading-7.5 px-3 xs:px-0 md:px-3 xs:h-16 md:h-12 ${
               currIndex === 4
                 ? `text-brown-10 border-b-4 border-brown-10 font-bold`
@@ -93,7 +93,7 @@ const TrackTabSection = ({ trackDataDetails }) => {
             tabIndex={0}
           >
             Track 05
-          </div>
+          </div> */}
         </div>
         <div>
           {trackDetailsData && trackDetailsData?.length !== 0 ? (

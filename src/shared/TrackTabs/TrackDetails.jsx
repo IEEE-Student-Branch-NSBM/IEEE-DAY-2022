@@ -17,7 +17,7 @@ const TrackDetails = ({ name, description, imageUrl }) => {
             <div className="inline-flex font-semibold text-lg">
               <div>Company Partner : </div>
               <Image
-                src={imageUrl}
+                src="/images/rootcode.png"
                 width={150}
                 height={40}
                 alt="character image"
@@ -41,7 +41,7 @@ const TrackDetails = ({ name, description, imageUrl }) => {
         </div>
         <div className="xs:hidden xxs:hidden md:block">
           <Image
-            src="/images/AI.png"
+            src={imageUrl}
             width={300}
             height={450}
             alt="character image"
