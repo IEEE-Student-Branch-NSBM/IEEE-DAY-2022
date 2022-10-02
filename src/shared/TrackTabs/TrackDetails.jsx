@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { HyperlinkButton } from "../../shared/Buttons/HyperlinkButton";
 
 const TrackDetails = ({ name, description, imageUrl }) => {
   return (
@@ -30,9 +31,12 @@ const TrackDetails = ({ name, description, imageUrl }) => {
             </div>
           </div>
           <div className="sm:w-full md:w-11/12 bg-brown-10 text-center justify-center mt-10">
-            <button className="text-white p-3 text-lg font-bold">
-              Register Now
-            </button>
+            <div className="text-white p-3 text-lg font-bold">
+              <HyperlinkButton
+                text="Register Now"
+                link="https://docs.google.com/forms/d/e/1FAIpQLSdz-q-KXOog0kUqGCq5TyN4lHq_oCowi2roNGiw8AlM6sA1pw/viewform"
+              />
+            </div>
           </div>
         </div>
         <div className="xs:hidden xxs:hidden md:block">

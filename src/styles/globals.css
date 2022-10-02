@@ -9,5 +9,14 @@
 }
 
 .custom-img {
-  background-image: url('../../public/images/Header.png');
+  background-image: url("../../public/images/Header 2.png");
+}
+
+@font-face {
+  font-family: "The Black Sugare";
+  src: url("../../public/The\ Black\ Sugare.ttf");
+}
+
+.test-1 {
+  font-family: "The Black Sugare";
 }
