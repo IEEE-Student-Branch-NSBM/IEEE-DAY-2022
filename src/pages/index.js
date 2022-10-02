@@ -7,7 +7,7 @@ import { countdownMath } from "../utils/mathutils";
 import Hero from "../components/Home/Hero";
 import { ContactSection } from "../components/Contact/ContactSection";
 import { FooterSection } from "../components/Footer/FooterSection";
-
+import { Faq } from "../components/FAQ/Faq";
 
 export default function Home() {
   return (
@@ -23,7 +23,6 @@ export default function Home() {
 
       <Hero />
 
-
       <section className="relative justify-center mx-auto my-auto">
         <CountdownTimer targetDate={countdownMath()} />
       </section>
@@ -38,6 +37,10 @@ export default function Home() {
 
       <section className="relative justify-center mx-auto my-auto">
         <TrackSession />
+      </section>
+
+      <section className="relative justify-center mx-auto my-auto">
+        <Faq />
       </section>
 
       <section className="relative justify-center mx-auto my-auto">
