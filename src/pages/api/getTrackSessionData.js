@@ -38,13 +38,6 @@ export default function handler(req, res) {
           "A robotic system is capable of performing tasks and duties normally performed by humans. Robotics engineers with specialized training in electrical and mechanical engineering design robotic systems. Robotics is an interdisciplinary branch of computer science and engineering. Robotics involves design, construction, operation, and use of robots. This session  is open for all the undergraduates who find this field interesting.",
         image: "/images/rootcode.png",
       },
-      {
-        id: 5,
-        trackCategory: "Track 05",
-        tile: "Student Session",
-        description: "",
-        image: "/images/rootcode.png",
-      },
     ],
   });
 }
