@@ -27,7 +27,7 @@ export const Faq = () => {
 
   return (
     <>
-      <div className="relative container px-4 mx-auto">
+      <div id="faq" className="relative container px-4 mx-auto">
         <div className="md:max-w-4xl mx-auto">
           <HeaderTitle title={data?.headerTitle} key={data?.id} />
           <div className="mb-11 flex flex-wrap mt-10">

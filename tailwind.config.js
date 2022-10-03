@@ -21,6 +21,9 @@ module.exports = {
       "3xl": "1920px",
     },
     extend: {
+      fontFamily: {
+        The_Black_Sugare: "The_Black_Sugare,cursive",
+      },
       backgroundImage: {
         "hero-pattern": "url('/images/countdownbg.png')",
         "footer-texture": "url('/img/footer-texture.png')",
@@ -154,6 +157,11 @@ module.exports = {
         "19xl": "80px",
         "20xl": "84px",
         "21xl": "92px",
+        "22xl": "96px",
+        "23xl": "100px",
+        "24xl": "104px",
+        "25xl": "108px",
+        "26xl": "112px",
       },
       zIndex: {
         "-10": "-10",

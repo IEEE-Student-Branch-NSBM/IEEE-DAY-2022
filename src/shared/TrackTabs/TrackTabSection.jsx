@@ -30,7 +30,7 @@ const TrackTabSection = ({ trackDataDetails }) => {
       <div className="w-full">
         <div className="flex justify-between border-b-2 border-gray-300 mb-14 xs:text-center">
           <div
-            className={`text-lg xl:text-2xl leading-7 xl:leading-7.5 px-3 xs:px-0 md:px-3 xs:h-16 md:h-12 ${
+            className={`text-lg xl:text-2xl leading-7 xl:leading-7.5 px-3 xs:px-0 md:px-3 xs:h-16 md:h-12 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer ${
               currIndex === 0
                 ? `text-brown-10 border-b-4 border-brown-10 font-bold`
                 : `text-brown-20 font-bold`
@@ -43,7 +43,7 @@ const TrackTabSection = ({ trackDataDetails }) => {
             Track 01
           </div>
           <div
-            className={`text-lg xl:text-2xl leading-7 xl:leading-7.5 px-3 xs:px-0 md:px-3 xs:h-16 md:h-12 ${
+            className={`text-lg xl:text-2xl leading-7 xl:leading-7.5 px-3 xs:px-0 md:px-3 xs:h-16 md:h-12 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer ${
               currIndex === 1
                 ? `text-brown-10 border-b-4 border-brown-10 font-bold`
                 : `text-brown-20 font-bold`
@@ -56,7 +56,7 @@ const TrackTabSection = ({ trackDataDetails }) => {
             Track 02
           </div>
           <div
-            className={`text-lg xl:text-2xl leading-7 xl:leading-7.5 px-3 xs:px-0 md:px-3 xs:h-16 md:h-12 ${
+            className={`text-lg xl:text-2xl leading-7 xl:leading-7.5 px-3 xs:px-0 md:px-3 xs:h-16 md:h-12 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer ${
               currIndex === 2
                 ? `text-brown-10 border-b-4 border-brown-10 font-bold`
                 : `text-brown-20 font-bold`
@@ -69,7 +69,7 @@ const TrackTabSection = ({ trackDataDetails }) => {
             Track 03
           </div>
           <div
-            className={`text-lg xl:text-2xl leading-7 xl:leading-7.5 px-3 xs:px-0 md:px-3 xs:h-16 md:h-12 ${
+            className={`text-lg xl:text-2xl leading-7 xl:leading-7.5 px-3 xs:px-0 md:px-3 xs:h-16 md:h-12 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer ${
               currIndex === 3
                 ? `text-brown-10 border-b-4 border-brown-10 font-bold`
                 : `text-brown-20 font-bold`
@@ -81,7 +81,7 @@ const TrackTabSection = ({ trackDataDetails }) => {
           >
             Track 04
           </div>
-          <div
+          {/* <div
             className={`text-lg xl:text-2xl leading-7 xl:leading-7.5 px-3 xs:px-0 md:px-3 xs:h-16 md:h-12 ${
               currIndex === 4
                 ? `text-brown-10 border-b-4 border-brown-10 font-bold`
@@ -93,7 +93,7 @@ const TrackTabSection = ({ trackDataDetails }) => {
             tabIndex={0}
           >
             Track 05
-          </div>
+          </div> */}
         </div>
         <div>
           {trackDetailsData && trackDetailsData?.length !== 0 ? (
@@ -103,6 +103,7 @@ const TrackTabSection = ({ trackDataDetails }) => {
                 name={track?.tile}
                 description={track?.description}
                 imageUrl={track?.image}
+                company={track?.companyLogo}
               />
             ))
           ) : (

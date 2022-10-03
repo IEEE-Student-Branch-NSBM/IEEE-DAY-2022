@@ -31,21 +31,21 @@ export default function Home() {
         <AboutSection />
       </section>
 
-      <section className="relative justify-center mx-auto my-auto">
+      {/* <section className="relative justify-center mx-auto my-auto">
         <SpeakerSection />
-      </section>
+      </section> */}
 
-      <section className="relative justify-center mx-auto my-auto">
+      <section className="relative justify-center mx-auto my-auto mt-30">
         <TrackSession />
       </section>
 
-      <section className="relative justify-center mx-auto my-auto">
+      <section className="relative justify-center mx-auto my-auto mt-30">
         <Faq />
       </section>
 
-      <section className="relative justify-center mx-auto my-auto">
+      {/* <section className="relative justify-center mx-auto my-auto">
         <ContactSection />
-      </section>
+      </section> */}
 
       <section className="relative justify-center mx-auto my-auto">
         <FooterSection />
