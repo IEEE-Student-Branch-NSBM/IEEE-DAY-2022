@@ -44,9 +44,9 @@ export default function Home() {
         <Sponsors />
       </section>
 
-      {/* <section className="relative justify-center mx-auto my-auto mt-30">
+      <section className="relative justify-center mx-auto my-auto mt-30">
         <Faq />
-      </section> */}
+      </section>
 
       {/* <section className="relative justify-center mx-auto my-auto">
         <ContactSection />

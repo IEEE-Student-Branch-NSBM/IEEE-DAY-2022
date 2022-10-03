@@ -69,7 +69,7 @@ function Navbar() {
             <Link href="/#speaker">SPEAKERS</Link>
           </li> */}
           <li className="p-4">
-            <Link href="/#track">TRACKS</Link>
+            <Link href="/#track">SESSIONS</Link>
           </li>
           <li className="p-4">
             <Link href="/#faq">FAQ</Link>
@@ -114,13 +114,13 @@ function Navbar() {
               onClick={handleNav}
               className="p-4 text-3xl hover:text-gray-500"
             >
-              <Link href="/#track">TRACKS</Link>
+              <Link href="/#track">SESSIONS</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-3xl hover:text-gray-500"
             >
-              <Link href="/#faq">FQA</Link>
+              <Link href="/#faq">FAQ</Link>
             </li>
           </ul>
         </div>

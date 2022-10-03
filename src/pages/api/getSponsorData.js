@@ -31,7 +31,7 @@ export default function handler(req, res) {
       {
         id: 5,
         companyLogo: "/images/companyLogos/nsbmMedia.png",
-        detail: "",
+        detail: "Official Media Partner",
       },
     ],
   });
