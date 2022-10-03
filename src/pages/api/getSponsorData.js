@@ -3,9 +3,9 @@
 export default function handler(req, res) {
   res.status(200).json({
     id: 1,
-    headerTitle: "Our Supporters",
+    headerTitle: "Our Partners and Sponsors",
     headerDescription:
-      "Sponsors are the backbone of any event. We are grateful to our sponsors for their support and contribution to IEEE Day NSBM 2022.",
+      "Presenting our gracious partners that have helped make this event spectacular and conceivable.",
     sponsorList: [
       {
         id: 1,
@@ -16,20 +16,15 @@ export default function handler(req, res) {
       {
         id: 2,
         companyLogo: "/images/companyLogos/virtusa.png",
-        detail: "Cyber Security & Networking track",
+        detail: "Industry partner",
       },
       {
         id: 3,
-        companyLogo: "/images/companyLogos/virtusa.png",
-        detail: "Engineering Session track",
-      },
-      {
-        id: 4,
         companyLogo: "/images/companyLogos/Aeturnum.png",
         detail: "Bronze Partner",
       },
       {
-        id: 5,
+        id: 4,
         companyLogo: "/images/companyLogos/nescafe.png",
         detail: "Beverage Partner",
       },
