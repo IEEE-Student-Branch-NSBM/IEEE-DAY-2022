@@ -45,14 +45,7 @@ export const AboutSection = () => {
             gathered to share their technical knowledge among them and Worldwide
             celebrations demonstrate the ways thousands of IEEE members in local
             communities join to collaborate on ideas that
-            <b> Leverage technology for a better tomorrow</b>. <br />
-            <br />
-            We are delighted to announce the IEEE Student Branch of NSBM ready
-            to celebrate IEEE Day 2022, the most alluring event of the year with
-            the most prominent collaboration of Engineers and IEEE Members
-            worldwide. We hope to demonstrate how IEEE members in local
-            communities work together to cooperate on ideas that harness
-            technology for a better tomorrow.
+            <b> Leverage technology for a better tomorrow</b>.
           </p>
           <Link href="/#track">
             <div className="inline-flex m-auto font-lg text-white bg-brown-10 mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
