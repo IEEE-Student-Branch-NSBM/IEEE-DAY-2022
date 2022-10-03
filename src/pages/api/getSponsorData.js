@@ -28,6 +28,11 @@ export default function handler(req, res) {
         companyLogo: "/images/companyLogos/nescafe.png",
         detail: "Beverage Partner",
       },
+      {
+        id: 5,
+        companyLogo: "/images/companyLogos/nsbmMedia.png",
+        detail: "",
+      },
     ],
   });
 }
