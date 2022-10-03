@@ -8,6 +8,7 @@ import Hero from "../components/Home/Hero";
 import { ContactSection } from "../components/Contact/ContactSection";
 import { FooterSection } from "../components/Footer/FooterSection";
 import { Faq } from "../components/FAQ/Faq";
+import Sponsors from "../components/Sponsors/Sponsors";
 
 export default function Home() {
   return (
@@ -23,9 +24,9 @@ export default function Home() {
 
       <Hero />
 
-      <section className="relative justify-center mx-auto my-auto">
+      {/* <section className="relative justify-center mx-auto my-auto">
         <CountdownTimer targetDate={countdownMath()} />
-      </section>
+      </section> */}
 
       <section className="relative justify-center mx-auto my-auto">
         <AboutSection />
@@ -40,8 +41,12 @@ export default function Home() {
       </section>
 
       <section className="relative justify-center mx-auto my-auto mt-30">
-        <Faq />
+        <Sponsors />
       </section>
+
+      {/* <section className="relative justify-center mx-auto my-auto mt-30">
+        <Faq />
+      </section> */}
 
       {/* <section className="relative justify-center mx-auto my-auto">
         <ContactSection />
