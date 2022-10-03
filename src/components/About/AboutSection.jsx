@@ -47,14 +47,13 @@ export const AboutSection = () => {
             communities join to collaborate on ideas that
             <b> Leverage technology for a better tomorrow</b>.
           </p>
-          <Link href="/#track">
-            <div className="inline-flex m-auto font-lg text-white bg-brown-10 mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
-              <HyperlinkButton
-                key={data?.id}
-                text="MORE DETAILS"
-                link={data?.buttonLink}
-              />
-            </div>
+
+          <Link href="https://ieeeday.org">
+            <a target="_blank" rel="noreferrer" className="inline-flex">
+              <div className="inline-flex m-auto font-lg text-white bg-brown-10 mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
+                <p className="font-bold px-9 py-3">MORE DETAILS</p>
+              </div>
+            </a>
           </Link>
         </div>
       </div>

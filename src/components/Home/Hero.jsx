@@ -22,24 +22,20 @@ const Hero = () => {
   return (
     <div>
       <div
-        className="flex items-center h-screen w-full bg-fixed  object-cover bg-center bg-cover "
+        className="flex items-center h-screen w-full bg-fixed object-cover bg-center bg-cover "
         style={bgImageStyle}
       >
-        <div className="p-5 text-white px-0 sm:px-32 ">
-          <h2 className="font-black text-20xl font-The_Black_Sugare sm:text-23xl drop-shadow-xl">
+        <div className="flex flex-col p-5 text-white px-5 sm:px-32">
+          <h2 className="font-black text-20xl text-center sm:text-left font-The_Black_Sugare sm:text-23xl drop-shadow-xl">
             IEEE DAY NSBM
           </h2>
-          <h2 className="font-bold text-20xl sm:text-23xl pb-2 font-The_Black_Sugare drop-shadow-xl">
+          <h2 className="font-bold text-20xl text-center sm:text-left sm:text-23xl pb-2 font-The_Black_Sugare drop-shadow-xl">
             2022
           </h2>
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdz-q-KXOog0kUqGCq5TyN4lHq_oCowi2roNGiw8AlM6sA1pw/closedform">
-            <a target="_blank" rel="noreferrer">
-              <div className="inline-flex l m-auto font-lg border-2 py-2 px-8 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
-                <HyperlinkButton
-                  key={data?.id}
-                  text={data?.title}
-                  link={data?.buttonLink}
-                />
+            <a target="_blank" rel="noreferrer" className="mx-auto sm:mx-0">
+              <div className="inline-flex mx-auto font-lg border-2 w-40 h-11 py-2 px-8 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
+                <div className="font-bold mx-auto">Register</div>
               </div>
             </a>
           </Link>
