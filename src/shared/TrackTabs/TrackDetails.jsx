@@ -32,7 +32,7 @@ const TrackDetails = ({ name, description, imageUrl, company }) => {
             </div>
           </div>
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdz-q-KXOog0kUqGCq5TyN4lHq_oCowi2roNGiw8AlM6sA1pw/viewform">
-            <a target="_blank">
+            <a target="_blank" rel="noreferrer">
               <div className="sm:w-full md:w-11/12 bg-brown-10 text-center justify-center mt-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
                 <div className="text-white p-3 text-lg font-bold">
                   <HyperlinkButton

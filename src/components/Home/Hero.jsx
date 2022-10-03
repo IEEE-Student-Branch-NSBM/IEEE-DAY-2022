@@ -33,7 +33,7 @@ const Hero = () => {
             2022
           </h2>
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdz-q-KXOog0kUqGCq5TyN4lHq_oCowi2roNGiw8AlM6sA1pw/closedform">
-            <a target="_blank">
+            <a target="_blank" rel="noreferrer">
               <div className="inline-flex l m-auto font-lg border-2 py-2 px-8 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
                 <HyperlinkButton
                   key={data?.id}
