@@ -43,9 +43,9 @@ export default function Home() {
         <Faq />
       </section>
 
-      <section className="relative justify-center mx-auto my-auto">
+      {/* <section className="relative justify-center mx-auto my-auto">
         <ContactSection />
-      </section>
+      </section> */}
 
       <section className="relative justify-center mx-auto my-auto">
         <FooterSection />

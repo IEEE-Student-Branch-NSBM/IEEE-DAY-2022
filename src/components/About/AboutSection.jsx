@@ -4,6 +4,7 @@ import Image from "next/image";
 import { HeaderTitle } from "../../shared/Titles/HeaderTitle";
 import { HyperlinkButton } from "../../shared/Buttons/HyperlinkButton";
 import PreLoader from "../Loader/PreLoader";
+import Link from "next/link";
 
 export const AboutSection = () => {
   const fetcher = (url) => fetch(url).then((res) => res.json());
@@ -20,7 +21,10 @@ export const AboutSection = () => {
 
   return (
     <>
-      <div id="about" className="flex flex-col lg:flex-row justify-evenly align-middle items-center xl:w-4/5 mx-auto mt-24">
+      <div
+        id="about"
+        className="flex flex-col lg:flex-row justify-evenly align-middle items-center xl:w-4/5 mx-auto mt-24"
+      >
         <div>
           <Image
             src={data.image}
@@ -50,13 +54,15 @@ export const AboutSection = () => {
             communities work together to cooperate on ideas that harness
             technology for a better tomorrow.
           </p>
-          <div className="inline-flex m-auto font-lg text-white bg-brown-10 mt-7">
-            <HyperlinkButton
-              key={data?.id}
-              text="MORE DETAILS"
-              link={data?.buttonLink}
-            />
-          </div>
+          <Link href="/#speaker">
+            <div className="inline-flex m-auto font-lg text-white bg-brown-10 mt-7">
+              <HyperlinkButton
+                key={data?.id}
+                text="MORE DETAILS"
+                link={data?.buttonLink}
+              />
+            </div>
+          </Link>
         </div>
       </div>
     </>

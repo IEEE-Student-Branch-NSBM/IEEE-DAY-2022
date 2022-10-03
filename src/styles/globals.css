@@ -4,19 +4,20 @@
 
 * {
   text-decoration: none !important;
-  font-family: "Poppins" !important;
+  font-family: "Poppins";
   scroll-behavior: smooth;
 }
 
 .custom-img {
-  background-image: url('../../public/images/Header 2.png');
+  background-image: url("../../public/images/Header 2.png");
 }
 
-@font-face {
-  font-family: 'The Black Sugare';
-  src: url('../../public/The\ Black\ Sugare.ttf');
-}
-
-.test-1 {
-  font-family: 'The Black Sugare' ;
+@layer base {
+  @font-face {
+    font-family: "The_Black_Sugare";
+    src: url("/fonts/TheBlackSugare-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+  }
 }
