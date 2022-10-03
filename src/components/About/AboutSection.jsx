@@ -23,7 +23,7 @@ export const AboutSection = () => {
     <>
       <div
         id="about"
-        className="flex flex-col lg:flex-row justify-evenly align-middle items-center xl:w-4/5 mx-auto mt-24"
+        className="flex flex-col lg:flex-row justify-evenly align-middle items-center xl:w-4/5 mx-auto mt:0 sm:mt-24"
       >
         <div>
           <Image
