@@ -25,7 +25,7 @@ const Sponsors = () => {
       <div className="lg:px-80 py-4">
         <HeaderSubTitle key={data?.id} description={data?.headerDescription} />
       </div>
-      <div className="flex flex-col sm:flex-row lg:px-32 mt-10 mx-auto">
+      <div className="flex flex-col sm:flex-row lg:mx-auto mt-5 justify-center items-center">
         {data?.sponsorList.map((company) => (
           <SponsorCard
             key={company?.id}
