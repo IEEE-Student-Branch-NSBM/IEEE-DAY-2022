@@ -54,8 +54,8 @@ export const AboutSection = () => {
             communities work together to cooperate on ideas that harness
             technology for a better tomorrow.
           </p>
-          <Link href="/#speaker">
-            <div className="inline-flex m-auto font-lg text-white bg-brown-10 mt-7">
+          <Link href="/#track">
+            <div className="inline-flex m-auto font-lg text-white bg-brown-10 mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
               <HyperlinkButton
                 key={data?.id}
                 text="MORE DETAILS"

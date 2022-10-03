@@ -13,6 +13,7 @@ export default function handler(req, res) {
         description:
           "Data science and Artificial Intelligence are two complementary fields of intelligent Systems, where Data science focuses on statistical techniques. Both these areas are high in the future tech industry. This session is open to all tech enthusiastic who are interested in learning Data Science and AI. Participants will be learning data structures, machine learning, and business intelligence like topics related to data science as well as can learn what AI is and its future developments and advantages.",
         image: "/images/AI.png",
+        companyLogo: "/images/companyLogos/orelit.png",
       },
       {
         id: 2,
@@ -21,6 +22,7 @@ export default function handler(req, res) {
         description:
           "Virtual reality (VR) and Augmented reality (AR) are two of the most promising technologies currently sweeping the world. AR and VR are making their way into every market, from gaming and entertainment toto 3D modeling and social networking. This session is all about how these technologies involve in-game developments and future advancements in the gaming industry. This is also open to all undergraduates.",
         image: "/images/AR.png",
+        companyLogo: "/images/companyLogos/individual.png",
       },
       {
         id: 3,
@@ -29,6 +31,7 @@ export default function handler(req, res) {
         description:
           "It is essential for Cyber Security Professionals to have a solid understanding of how computers communicate. There is much more happening behind the scenes of computer networks than what can be observed when using applications. This will be a valuable awareness session for all the participants as it is a well discussed topic among IT enthusiasts. Interested undergraduates on the relevant topic will be the participants of this event.",
         image: "/images/Network.png",
+        companyLogo: "/images/companyLogos/virtusa.png",
       },
       {
         id: 4,
@@ -37,6 +40,7 @@ export default function handler(req, res) {
         description:
           "A robotic system is capable of performing tasks and duties normally performed by humans. Robotics engineers with specialized training in electrical and mechanical engineering design robotic systems. Robotics is an interdisciplinary branch of computer science and engineering. Robotics involves design, construction, operation, and use of robots. This session  is open for all the undergraduates who find this field interesting.",
         image: "/images/Robotics.png",
+        companyLogo: "/images/companyLogos/virtusa.png",
       },
     ],
   });

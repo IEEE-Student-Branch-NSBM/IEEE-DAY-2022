@@ -17,8 +17,8 @@ function Navbar() {
   useEffect(() => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
-        setColor("#DFBB9D");
-        setTextColor("#783903");
+        setColor("#783903");
+        setTextColor("#ffffff");
       } else {
         setColor("transparent");
         setTextColor("#ffffff");
@@ -42,7 +42,7 @@ function Navbar() {
   return (
     <div
       style={{ backgroundColor: `${color}` }}
-      className="fixed w-full z-10 ease-in duration-300"
+      className="fixed w-full z-10 ease-in duration-300 drop-shadow-2xl"
     >
       <div
         style={{ color: `${textColor}` }}
@@ -65,9 +65,9 @@ function Navbar() {
           <li className="p-4">
             <Link href="/#about">ABOUT</Link>
           </li>
-          <li className="p-4">
+          {/* <li className="p-4">
             <Link href="/#speaker">SPEAKERS</Link>
-          </li>
+          </li> */}
           <li className="p-4">
             <Link href="/#track">TRACKS</Link>
           </li>
@@ -87,8 +87,8 @@ function Navbar() {
         <div
           className={
             nav
-              ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen text-white bg-black text-center ease-in duration-300"
-              : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
+              ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen text-white bg-brown-10 text-center ease-in duration-300"
+              : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-brown-10 text-center ease-in duration-300"
           }
         >
           <ul>
@@ -104,12 +104,12 @@ function Navbar() {
             >
               <Link href="/#about">ABOUT</Link>
             </li>
-            <li
+            {/* <li
               onClick={handleNav}
               className="p-4 text-3xl hover:text-gray-500"
             >
               <Link href="/#speaker">SPEAKERS</Link>
-            </li>
+            </li> */}
             <li
               onClick={handleNav}
               className="p-4 text-3xl hover:text-gray-500"

@@ -40,7 +40,7 @@ const CountdownTimer = ({ targetDate }) => {
       {data && (
         <div className="bg-hero-pattern grid grid-cols-1 grid-rows-5 sm:grid-rows-6 h-85 place-items-center">
           <p className="font-bold text-12xl text-brown-10 leading-15 mt-11">
-            Lorem Ipsum
+            Registrations is open till
           </p>
           <div></div>
           <ShowCounter
