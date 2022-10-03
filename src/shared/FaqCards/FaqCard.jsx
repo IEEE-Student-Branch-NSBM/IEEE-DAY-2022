@@ -2,7 +2,6 @@ import React from "react";
 import { HiMinusCircle, HiPlusCircle } from "react-icons/hi";
 
 const FaqCard = (item, i, selected) => {
-  console.log(i);
   return (
     <div className="flex flex-wrap justify-between -m-2">
       <div className="flex-1 p-2">

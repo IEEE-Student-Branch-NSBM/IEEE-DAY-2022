@@ -25,7 +25,7 @@ const Hero = () => {
         className="flex items-center h-screen w-full bg-fixed  object-cover bg-center bg-cover "
         style={bgImageStyle}
       >
-        <div className="p-5 text-white sm:px-32 ">
+        <div className="p-5 text-white px-0 sm:px-32 ">
           <h2 className="font-black text-20xl font-The_Black_Sugare sm:text-23xl drop-shadow-xl">
             IEEE DAY NSBM
           </h2>
