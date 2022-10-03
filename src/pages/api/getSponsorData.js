@@ -10,18 +10,18 @@ export default function handler(req, res) {
       {
         id: 1,
         companyLogo: "/images/companyLogos/orelit.png",
-        detail: "Data Science and AI track company partner",
+        detail: "Data Science and AI track",
       },
 
       {
         id: 2,
         companyLogo: "/images/companyLogos/virtusa.png",
-        detail: "Cyber Security & Networking track company partner",
+        detail: "Cyber Security & Networking track",
       },
       {
         id: 3,
         companyLogo: "/images/companyLogos/virtusa.png",
-        detail: "Engineering Session track company partner",
+        detail: "Engineering Session track",
       },
       {
         id: 4,
