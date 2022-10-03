@@ -40,7 +40,7 @@ export default function Home() {
         <TrackSession />
       </section>
 
-      <section className="relative justify-center mx-auto my-auto mt-30">
+      <section className="relative justify-center mx-auto my-auto mt-30 ">
         <Sponsors />
       </section>
 
