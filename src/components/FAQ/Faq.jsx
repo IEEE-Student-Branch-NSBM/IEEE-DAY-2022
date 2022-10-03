@@ -36,7 +36,7 @@ export const Faq = () => {
                 <div
                   className={`py-7 px-8  ${
                     selected === i ? "bg-brown-20 shadow-10xl" : "bg-brown-10"
-                  } `}
+                  } delay-75 duration-300 ease-in-out`}
                 >
                   <div className="flex flex-wrap justify-between">
                     <div className="flex-1 p-2">
@@ -44,7 +44,7 @@ export const Faq = () => {
                         {item.question}
                       </h3>
                       <p
-                        className={`text-white font-medium ${
+                        className={`text-white font-medium duration-300 ease-in-out  ${
                           selected === i ? "block" : "hidden"
                         }`}
                       >
