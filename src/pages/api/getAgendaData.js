@@ -9,7 +9,7 @@ export default function handler(req, res) {
       {
         id: 1,
         time: "08:30 AM – 09:15 AM",
-        prefixImg: "/images/agendaPrefix/registration.png",
+        prefixImg: "/images/agendaPrefix/register.jpg",
         title: "Registration Opening",
         description: " ",
       },
@@ -44,21 +44,21 @@ export default function handler(req, res) {
       {
         id: 6,
         time: "10:15 AM – 10:25 AM",
-        prefixImg: "/images/agendaPrefix/sample.jpg",
+        prefixImg: "/images/agendaPrefix/misnad.jpg",
         title: "Keynote Speech",
-        description: "By Mr. Shenal Colonna",
+        description: "By Mr. Misnad Haque",
       },
       {
         id: 7,
         time: "10:25 AM – 10:35 AM",
         prefixImg: "/images/agendaPrefix/cake.jpg",
-        title: "Cuting Cake",
+        title: "Cutting Cake",
         description: " ",
       },
       {
         id: 8,
         time: "10:35 AM – 10:40 AM",
-        prefixImg: "/images/agendaPrefix/sample.jpg",
+        prefixImg: "/images/agendaPrefix/intro.jpg",
         title: "Introduction to Parallel Sessions",
         description: " ",
       },
@@ -114,10 +114,10 @@ export default function handler(req, res) {
       {
         id: 16,
         time: "04:00 PM – 04:15 PM",
-        prefixImg: "/images/agendaPrefix/sample.jpg",
+        prefixImg: "/images/agendaPrefix/thankyou.jpg",
         title: "Thank you Speech",
         description: "",
-      },      
+      },
     ],
   });
 }
