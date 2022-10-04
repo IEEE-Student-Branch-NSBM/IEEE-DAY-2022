@@ -72,6 +72,9 @@ function Navbar() {
             <Link href="/#track">SESSIONS</Link>
           </li>
           <li className="p-4">
+            <Link href="/#agenda">AGENDA</Link>
+          </li>
+          <li className="p-4">
             <Link href="/#faq">FAQ</Link>
           </li>
         </ul>
